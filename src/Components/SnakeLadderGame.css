@@ -1,0 +1,63 @@
+.game-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    gap: 2px;
+    border: 2px solid #333;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .player {
+    background-color: #4caf50;
+    border-radius: 50%;
+  }
+  
+  .snake-ladder {
+    background-color: #61dafb;
+  }
+  
+  .marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #4fa3d1;
+  }
+  

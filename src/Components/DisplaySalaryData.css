@@ -1,0 +1,44 @@
+/* Apply styles to the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Apply styles to table header cells */
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #dddddd;
+  }
+  
+  /* Apply styles to table data cells */
+  td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #dddddd;
+  }
+  
+  /* Apply alternate background color to table rows */
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .salary{
+    color: black;
+  }
+  /* DisplaySalaryData.css */
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }

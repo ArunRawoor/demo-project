@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,62 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+
+
+
+
+/* src/App.css */
+.calendar {
+  max-width: 300px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.header div {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.day {
+  text-align: center;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.cell.disabled {
+  background-color: #eee;
+}
+
+.days {
+  display: flex;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
 }
