@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'; // this is the main App.js
 import CombinedForm from './Components/CombinedForm';
 import DisplaySalaryData from './Components/DisplaySalaryData';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -8,6 +8,7 @@ import Calendar from './Components/Calendar';
 // import ChatApp from './Components/ChatApp';
 import Cookiees from './Components/Cookiees';
 import LoginLogout from './Components/LoginLogout';
+import Loginwith_jwt from './Components/Loginwith_jwt';
 
 
 
@@ -24,7 +25,8 @@ function App() {
       {/* <SnakeLadderGame/> */}
       {/* <Calendar/> */}
       {/* <Cookiees/> */}
-      <LoginLogout/>
+      {/* <LoginLogout/> */}
+       <Loginwith_jwt/>
 
     </div>
   );
@@ -36,7 +38,7 @@ export default App;
 
 
 
-// App.js
+//This App.js is for Coockiees login purpose.
 
 // import React, { useState } from 'react';
 
@@ -73,6 +75,69 @@ export default App;
 //       <button onClick={handleLogin}>Login</button>
 //       <button onClick={handleLogout}>Logout</button>
 //       <p>{message}</p>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+
+
+//This App.js is for the Jwt login purpose
+// import React, { useState } from 'react';
+// import axios from 'axios';
+
+// function App() {
+//   const [username, setUsername] = useState('');
+//   const [password, setPassword] = useState('');
+//   const [token, setToken] = useState('');
+
+//   const register = async () => {
+//     try {
+//       await axios.post('http://localhost:5000/register', { username, password });
+//       console.log('Registration successful');
+//     } catch (error) {
+//       console.error('Registration failed:', error.message);
+//     }
+//   };
+
+//   const login = async () => {
+//     try {
+//       const response = await axios.post('http://localhost:5000/login', { username, password });
+//       setToken(response.data.token);
+//       console.log('Login successful');
+//     } catch (error) {
+//       console.error('Login failed:', error.message);
+//     }
+//   };
+
+//   const profile = async () => {
+//     try {
+//       const response = await axios.get('http://localhost:5000/profile', {
+//         headers: {
+//           Authorization: `Bearer ${token}`
+//         }
+//       });
+//       console.log(response.data);
+//     } catch (error) {
+//       console.error('Profile fetch failed:', error.message);
+//     }
+//   };
+
+//   return (
+//     <div>
+//       <h1>MERN JWT Authentication</h1>
+//       <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+//       <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+//       <button onClick={register}>Register</button>
+//       <button onClick={login}>Login</button>
+//       <button onClick={profile}>Profile</button>
 //     </div>
 //   );
 // }
