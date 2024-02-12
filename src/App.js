@@ -10,7 +10,7 @@ import Cookiees from './Components/Cookiees';
 import LoginLogout from './Components/LoginLogout';
 import Loginwith_jwt from './Components/Loginwith_jwt';
 import Forgot_password from './Components/Forgot_password';
-import ForgotPassword from './Components/ForgotPassword';
+
 
 
 
@@ -30,7 +30,7 @@ function App() {
       {/* <LoginLogout/> */}
        {/* <Loginwith_jwt/> */}
        {/* <Forgot_password/> */}
-       <ForgotPassword/>
+
 
     </div>
   );
