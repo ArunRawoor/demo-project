@@ -9,6 +9,7 @@ const Loginwith_jwt = () => {
     const register = async () => {
         try {
             await axios.post('http://localhost:5000/register', { username, password });
+            alert('Registration successful');
             console.log('Registration successful');
         } catch (error) {
             console.error('Registration failed:', error.message);
@@ -19,6 +20,7 @@ const Loginwith_jwt = () => {
         try {
             const response = await axios.post('http://localhost:5000/login', { username, password });
             setToken(response.data.token);
+            alert('Login successful')
             console.log('Login successful');
         } catch (error) {
             console.error('Login failed:', error.message);
@@ -32,6 +34,7 @@ const Loginwith_jwt = () => {
                     Authorization: `Bearer ${token}`
                 }
             });
+             
             console.log(response.data);
         } catch (error) {
             console.error('Profile fetch failed:', error.message);
