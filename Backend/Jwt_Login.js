@@ -21,15 +21,6 @@ const User = mongoose.model('User', {
 // JWT secret key
 const JWT_SECRET = 'Run_A_0_0_1';
 
-// Endpoint to register a new user
-// app.post('/register', async (req, res) => {
-//   const { username, password } = req.body;
-//   const hashedPassword = bcrypt.hashSync(password, 10);
-//   const newUser = new User({ username, password: hashedPassword });
-//   await newUser.save();
-//   res.status(201).send('User registered successfully');
-// });
-
 
 app.post('/register', async (req, res) => {
     const { username, password } = req.body;
