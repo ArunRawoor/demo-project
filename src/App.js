@@ -26,7 +26,7 @@ function App() {
       {/* <SnakeGame/> */}
       {/* <SnakeLadderGame/> */}
       {/* <Calendar/> */}
-      {/* <Cookiees/> */}
+      <Cookiees/>
       {/* <LoginLogout/> */}
        {/* <Loginwith_jwt/> */}
        {/* <Forgot_password/> */}
