@@ -10,6 +10,9 @@ import Cookiees from './Components/Cookiees';
 import LoginLogout from './Components/LoginLogout';
 import Loginwith_jwt from './Components/Loginwith_jwt';
 import Forgot_password from './Components/Forgot_password';
+import Counter from './Components/Counter';
+import ProductList from './Components/ProductList';
+import ShoppingCart from './Components/ShoppingCart';
 
 
 
@@ -26,10 +29,15 @@ function App() {
       {/* <SnakeGame/> */}
       {/* <SnakeLadderGame/> */}
       {/* <Calendar/> */}
-      <Cookiees/>
+      {/* <Cookiees/> */}
       {/* <LoginLogout/> */}
        {/* <Loginwith_jwt/> */}
        {/* <Forgot_password/> */}
+
+       {/* <Counter/> */}
+       <h1>Shopping App</h1>
+       <ProductList/>
+     <ShoppingCart/>
 
 
     </div>
@@ -147,3 +155,27 @@ export default App;
 // }
 
 // export default App;
+
+
+
+//this App.js for  the redux 
+// App.js
+// import React from 'react';
+// import { connect } from 'react-redux';
+// import { increment, decrement } from '../src/actions/actions';
+
+// const App = ({ count, increment, decrement }) => {
+//   return (
+//     <div>
+//       <h1>Count: {count}</h1>
+//       <button onClick={increment}>Increment</button>
+//       <button onClick={decrement}>Decrement</button>
+//     </div>
+//   );
+// };
+
+// const mapStateToProps = (state) => ({
+//   count: state.count
+// });
+
+// export default connect(mapStateToProps, { increment, decrement })(App);
