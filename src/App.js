@@ -13,6 +13,7 @@ import Forgot_password from './Components/Forgot_password';
 import Counter from './Components/Counter';
 import ProductList from './Components/ProductList';
 import ShoppingCart from './Components/ShoppingCart';
+import DigitalClock from './Components/DigitalClock';
 
 
 
@@ -35,10 +36,10 @@ function App() {
        {/* <Forgot_password/> */}
 
        {/* <Counter/> */}
-       <h1>Shopping App</h1>
+       {/* <h1>Shopping App</h1>
        <ProductList/>
-     <ShoppingCart/>
-
+     <ShoppingCart/> */}
+      <DigitalClock/>
 
     </div>
   );
