@@ -14,6 +14,7 @@ import Counter from './Components/Counter';
 import ProductList from './Components/ProductList';
 import ShoppingCart from './Components/ShoppingCart';
 import DigitalClock from './Components/DigitalClock';
+import { Sidebar } from './Sidebar';
 
 
 
@@ -30,7 +31,7 @@ function App() {
       {/* <SnakeGame/> */}
       {/* <SnakeLadderGame/> */}
       {/* <Calendar/> */}
-      {/* <Cookiees/> */}
+      <Cookiees/>
       {/* <LoginLogout/> */}
        {/* <Loginwith_jwt/> */}
        {/* <Forgot_password/> */}
@@ -39,7 +40,8 @@ function App() {
        {/* <h1>Shopping App</h1>
        <ProductList/>
      <ShoppingCart/> */}
-      <DigitalClock/>
+      {/* <DigitalClock/> */}
+      {/* <Sidebar/> */}
 
     </div>
   );
