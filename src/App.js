@@ -1,59 +1,59 @@
-// import './App.css'; // this is the main App.js
-// import CombinedForm from './Components/CombinedForm';
-// import DisplaySalaryData from './Components/DisplaySalaryData';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import SnakeGame from './Components/SnakeGame';
-// import SnakeLadderGame from './Components/SnakeLadderGame';
-// import Calendar from './Components/Calendar';
-// // import ChatApp from './Components/ChatApp';
-// import Cookiees from './Components/Cookiees';
-// import LoginLogout from './Components/LoginLogout';
-// import Loginwith_jwt from './Components/Loginwith_jwt';
-// import Forgot_password from './Components/Forgot_password';
-// import Counter from './Components/Counter';
-// import ProductList from './Components/ProductList';
-// import ShoppingCart from './Components/ShoppingCart';
+import './App.css'; // this is the main App.js
+import CombinedForm from './Components/CombinedForm';
+import DisplaySalaryData from './Components/DisplaySalaryData';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SnakeGame from './Components/SnakeGame';
+import SnakeLadderGame from './Components/SnakeLadderGame';
+import Calendar from './Components/Calendar';
+// import ChatApp from './Components/ChatApp';
+import Cookiees from './Components/Cookiees';
+import LoginLogout from './Components/LoginLogout';
+import Loginwith_jwt from './Components/Loginwith_jwt';
+import Forgot_password from './Components/Forgot_password';
+import Counter from './Components/Counter';
+import ProductList from './Components/ProductList';
+import ShoppingCart from './Components/ShoppingCart';
 // import DigitalClock from './Components/DigitalClock';
-// import { Sidebar } from './Sidebar';
+import { Sidebar } from './Sidebar';
 
 
 
 
-// function App() {
-//   return (
-//     <div className="App">
-//       {/* <Router>
-//         <Routes>
-//           <Route path="/" element={<CombinedForm />} />
-//           <Route path="/DisplaySalaryData" element={<DisplaySalaryData />} />
-//         </Routes>
-//       </Router> */}
-//       {/* <SnakeGame/> */}
-//       {/* <SnakeLadderGame/> */}
-//       {/* <Calendar/> */}
-//       <Cookiees/>
-//       {/* <LoginLogout/> */}
-//        {/* <Loginwith_jwt/> */}
-//        {/* <Forgot_password/> */}
+function App() {
+  return (
+    <div className="App">
+      {/* <Router>
+        <Routes>
+          <Route path="/" element={<CombinedForm />} />
+          <Route path="/DisplaySalaryData" element={<DisplaySalaryData />} />
+        </Routes>
+      </Router> */}
+      {/* <SnakeGame/> */}
+      {/* <SnakeLadderGame/> */}
+      {/* <Calendar/> */}
+      <Cookiees/>
+      {/* <LoginLogout/> */}
+       {/* <Loginwith_jwt/> */}
+       {/* <Forgot_password/> */}
 
-//        {/* <Counter/> */}
-//        {/* <h1>Shopping App</h1>
-//        <ProductList/>
-//      <ShoppingCart/> */}
-//       {/* <DigitalClock/> */}
-//       {/* <Sidebar/> */}
+       {/* <Counter/> */}
+       {/* <h1>Shopping App</h1>
+       <ProductList/>
+     <ShoppingCart/> */}
+      {/* <DigitalClock/> */}
+      {/* <Sidebar/> */}
 
-//     </div>
-//   );
-// }
+    </div>
+  );
+}
 
-// export default App;
-
-
+export default App;
 
 
 
-//This App.js is for Coockiees login purpose.
+
+
+// This App.js is for Coockiees login purpose.
 
 // import React, { useState } from 'react';
 
@@ -189,53 +189,53 @@
 
 // App.js
 
-import React from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as portfolioActions from '../src/actions/portfolioActions';
+// import React from 'react';
+// import { connect } from 'react-redux';
+// import { bindActionCreators } from 'redux';
+// import * as portfolioActions from '../src/actions/portfolioActions';
 
-class App extends React.Component {
-  componentDidMount() {
-    // Dispatch an action to load portfolio data
-    this.props.actions.loadPortfolio();
-  }
+// class App extends React.Component {
+//   componentDidMount() {
+//     // Dispatch an action to load portfolio data
+//     this.props.actions.loadPortfolio();
+//   }
 
-  render() {
-    const { portfolio } = this.props;
+//   render() {
+//     const { portfolio } = this.props;
     
-    return (
-      <div>
-        <h1>My Personal Portfolio</h1>
-        <div>
-          {portfolio.loading ? (
-            <p>Loading...</p>
-          ) : (
-            <ul>
-              {portfolio.projects.map(project => (
-                <li key={project.id}>
-                  <h2>{project.title}</h2>
-                  <p>{project.description}</p>
-                  <p>Tech Stack: {project.techStack}</p>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      </div>
-    );
-  }
-}
+//     return (
+//       <div>
+//         <h1>My Personal Portfolio</h1>
+//         <div>
+//           {portfolio.loading ? (
+//             <p>Loading...</p>
+//           ) : (
+//             <ul>
+//               {portfolio.projects.map(project => (
+//                 <li key={project.id}>
+//                   <h2>{project.title}</h2>
+//                   <p>{project.description}</p>
+//                   <p>Tech Stack: {project.techStack}</p>
+//                 </li>
+//               ))}
+//             </ul>
+//           )}
+//         </div>
+//       </div>
+//     );
+//   }
+// }
 
-function mapStateToProps(state) {
-  return {
-    portfolio: state.portfolio
-  };
-}
+// function mapStateToProps(state) {
+//   return {
+//     portfolio: state.portfolio
+//   };
+// }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(portfolioActions, dispatch)
-  };
-}
+// function mapDispatchToProps(dispatch) {
+//   return {
+//     actions: bindActionCreators(portfolioActions, dispatch)
+//   };
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+// export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -53,24 +53,15 @@
 
 
 // index.js
-// index.js
-
-// index.js
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import configureStore from '../src/store/configureStore'; // Import your store configuration
+import store from '../src/store/store';
 import App from './App';
 
-const store = configureStore(); // Create the Redux store
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root')); // Use createRoot instead of ReactDOM.render
+root.render(
   <Provider store={store}>
     <App />
-  </Provider>,
-  document.getElementById('root')
-
-
+  </Provider>
 );
-
