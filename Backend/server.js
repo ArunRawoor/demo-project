@@ -109,6 +109,7 @@ const prescriptionSchema = new mongoose.Schema({
   scity: String,
   sstate: String,
   saddress: String,
+  branchId: String,
   treatedPerson: String,
   doctor: String,
   therapist: String,
