@@ -15,6 +15,9 @@ import ProductList from './Components/ProductList';
 import ShoppingCart from './Components/ShoppingCart';
 // import DigitalClock from './Components/DigitalClock';
 import { Sidebar } from './Sidebar';
+import LoginForm from './Components/LoginForm';
+import FetchDataComponent from './Components/FetchDataComponent';
+import Register from './Components/Register';
 
 
 
@@ -31,11 +34,13 @@ function App() {
       {/* <SnakeGame/> */}
       {/* <SnakeLadderGame/> */}
       {/* <Calendar/> */}
-      <Cookiees/>
+      {/* <Cookiees/> */}
       {/* <LoginLogout/> */}
        {/* <Loginwith_jwt/> */}
+       {/* <LoginForm/>
+       <FetchDataComponent/> */}
        {/* <Forgot_password/> */}
-
+      <Register/>
        {/* <Counter/> */}
        {/* <h1>Shopping App</h1>
        <ProductList/>
